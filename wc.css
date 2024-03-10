@@ -1,0 +1,121 @@
+body{
+    font-size: 2.5rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main{
+    border: 3px red solid;
+    height: 568px;
+}
+.container{
+    border: 2px solid rgb(102, 180, 226);
+    background-color: rgb(34, 154, 172);
+    border-radius:15px;
+    width: 36%;  
+    height: 656px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+    padding: 14px;
+    z-index: -2;
+    display: none;
+}
+
+.humidity{
+    color: rgb(45, 0, 128);
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 63px;
+    margin-top: 78px;
+
+height: 139px;
+width: 148px;
+}
+
+.temp{
+    /* margin-top: 23px; */
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 63px;
+    margin-top: 78px;
+
+    height: 139px;
+    width: 148px;
+}
+
+input{
+    font-size: 2.1rem;
+    border-radius: 23px;
+    background: #deecf1;
+}
+
+.btn{
+    width: 37px;
+    height: 39px;
+    border-radius: 23px;
+}
+
+.img{
+    width: 22px;
+    height: 22px;
+}
+
+.data{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 34px;
+       /* justify-items: ; */
+}
+
+.img1{
+    width:215px;
+    height:255px;
+}
+
+.img1_cont{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.ws{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+.humidity::before{
+    content:"";
+    background: url("humidity.png") no-repeat center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    width: 148px;
+    height: 139px;
+    z-index: -1;
+    opacity: .9;
+ }
+
+
+.temp::before{
+    content:"";
+    background: url("cloud.png") no-repeat center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    width: 148px;
+    height: 139px;
+    z-index: -1;
+    opacity: .9;
+}
